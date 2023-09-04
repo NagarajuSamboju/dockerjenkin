@@ -4,9 +4,9 @@ MAINTAINER Hari harichowdary.java@gmail.com
 
 
 
-WORKDIR /usr/local/tomcat
+WORKDIR /opt/tomcat/webapps
 
-COPY ./java-tomcat-maven-example.war /usr/local/tomcat/webapps
+COPY ./java-tomcat-maven-example.war /opt/tomcat/webapps
 
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
